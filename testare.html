@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Business Card Example</title>
+    <style>
+      body {
+        background-color: #eee;
+      }
+      h1,
+      h2,
+      p,
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-family: Arial, sans-serif;
+      }
+      #business-card {
+        display: inline-block;
+        background-color: #111;
+        width: 400px;
+        height: 200px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .info {
+        height: 115px;
+        border-left: 2px solid white;
+        padding: 0px 0px 0px 10px;
+      }
+      #business-card .name {
+        font-family: Arial;
+        text-align: right;
+        margin-right: 235px;
+        margin-top: 50px;
+      }
+      #business-card .info {
+        display: inline-block;
+        color: white;
+        text-align: left;
+        margin-left: 175px;
+        margin-top: -95px;
+      }
+      #business-card .name h1 {
+        color: white;
+        font-weight: lighter;
+      }
+      #business-card .name h2 {
+        color: rgb(207, 175, 127);
+      }
+
+      #business-card .name small {
+        color: rgb(167, 167, 167);
+        font-weight: 100;
+      }
+      #business-card .info li {
+        color: rgb(167, 167, 167);
+        font-size: smaller;
+        font-weight: 100;
+      }
+      #business-card .info li:first-child:before {
+        color: rgb(207, 175, 127);
+        content: "✆";
+        font-size: 20px;
+        margin-right: 5px;
+      }
+      #business-card .info li:nth-child(2):before {
+        color: rgb(207, 175, 127);
+        content: "✉";
+        font-size: 20px;
+        margin-right: 5px;
+      }
+      #business-card .info li:nth-child(3):before {
+        color: rgb(207, 175, 127);
+        content: "🖸";
+        font-size: 20px;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="business-card">
+      <div class="name">
+        <h1>Firstname</h1>
+        <h2>LASTNAME</h2>
+        <small>web designer &#47; developer</small>
+      </div>
+      <div class="info">
+        <p>12345 Some Street, City<br />State, Province, Country</p>
+        <ul>
+          <li>+00 22 333444</li>
+          <li>email@somemail.example</li>
+          <li>www.exampledomain.example</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
